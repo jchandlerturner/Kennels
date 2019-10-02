@@ -6,14 +6,19 @@
       "breed": "Blue Heeler"
     },
     {
-      "id": 3,
-      "name": "Zam",
-      "breed": "Beagle/Lab"
-    },
-    {
       "id": 6,
       "name": "Emmett",
-      "breed": "Mix"
+      "breed": "Mixed"
+    },
+    {
+      "name": "Bob",
+      "breed": "Lab",
+      "id": 7
+    },
+    {
+      "name": "Gradi",
+      "breed": "Chihuaha",
+      "id": 8
     }
   ],
   "employees": [
@@ -40,16 +45,16 @@
       "owns": "Decker"
     },
     {
-      "id": 3,
-      "name": "Bob",
-      "owns": "Esme"
+      "name": "Quin",
+      "owns": "Quin",
+      "id": 4
     }
   ],
   "locations": [
     {
-      "id": 3,
-      "name": "East Nashville",
-      "address": "Gallatin Pike"
+      "name": "HQ",
+      "address": "West",
+      "id": 2
     }
   ]
 }

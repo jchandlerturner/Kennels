@@ -14,6 +14,8 @@ class AnimalCard extends Component {
           <p>Breed: {this.props.animal.breed}</p>
           <Link to={`/animals/${this.props.animal.id}`}><button className="hvr-float">Details</button></Link>
           <button type="button" className= "hvr-float" onClick={() => this.props.deleteAnimal(this.props.animal.id)}>Discharge 👋</button>
+          <button type="button" className= "hvr-float"
+        onClick={() => {this.props.history.push(`/animals/${this.props.animal.id}/edit`)}}>Edit</button>
         </div>
       </div>
     );
