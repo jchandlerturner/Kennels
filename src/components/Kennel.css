@@ -1,0 +1,74 @@
+/* Import the google web fonts you want to use */
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+/*Typography
+--------------------------------------------------------------*/
+
+body, button, input, select, textarea {
+  color: #404040;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Patua One', serif;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: 1.5em;
+  color: #d6fcff;
+  color: darkslateblue;
+}
+
+strong {
+  font-weight: bold;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+.section-content {
+  padding: 1.4em;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .body {
+    display: flex;
+    flex-direction: row;
+}  */
+
+* .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pic {
+  height: 153.59px;
+  width: 153.59px;
+  display: block;
+  border: 0;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+}
+
+/* .cardsFlex {
+  display: flex;
+  flex-flow: row wrap;
+} */

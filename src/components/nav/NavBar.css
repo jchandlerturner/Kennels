@@ -1,0 +1,38 @@
+small {
+    font-size: 75%;
+  }
+  
+  header {
+    background-color: rgba(242, 161, 31, 0.336);
+    border: #F2A11F 3px;
+  }
+  
+  .site-title {
+    color: black;
+    text-align: center;
+  }
+  
+  nav .container {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  nav .container li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    box-sizing: border-box;
+    background-color: #f2a11fb7;
+    list-style-type: none;
+  }
+  
+  nav .container a {
+    color: cornsilk;
+  }
+  
+  nav .container a:hover {
+    color: #E4E4E2;
+  }

@@ -1,0 +1,55 @@
+{
+  "animals": [
+    {
+      "id": 2,
+      "name": "Gus",
+      "breed": "Blue Heeler"
+    },
+    {
+      "id": 3,
+      "name": "Zam",
+      "breed": "Beagle/Lab"
+    },
+    {
+      "id": 6,
+      "name": "Emmett",
+      "breed": "Mix"
+    }
+  ],
+  "employees": [
+    {
+      "id": 2,
+      "name": "Gradi",
+      "position": "Vet Tech"
+    },
+    {
+      "id": 3,
+      "name": "Quin",
+      "position": "Head Vet"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Jane",
+      "owns": "Doodle"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "owns": "Decker"
+    },
+    {
+      "id": 3,
+      "name": "Bob",
+      "owns": "Esme"
+    }
+  ],
+  "locations": [
+    {
+      "id": 3,
+      "name": "East Nashville",
+      "address": "Gallatin Pike"
+    }
+  ]
+}
