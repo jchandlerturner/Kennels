@@ -1,36 +1,10 @@
 {
-  "animals": [
-    {
-      "id": 2,
-      "name": "Gus",
-      "breed": "Blue Heeler"
-    },
-    {
-      "id": 6,
-      "name": "Emmett",
-      "breed": "Mixed"
-    },
-    {
-      "name": "Bob",
-      "breed": "Lab",
-      "id": 7
-    },
-    {
-      "name": "Gradi",
-      "breed": "Chihuaha",
-      "id": 8
-    }
-  ],
+  "animals": [],
   "employees": [
     {
-      "id": 2,
-      "name": "Gradi",
-      "position": "Vet Tech"
-    },
-    {
-      "id": 3,
       "name": "Quin",
-      "position": "Head Vet"
+      "position": "Quin",
+      "id": 2
     }
   ],
   "owners": [
@@ -52,9 +26,14 @@
   ],
   "locations": [
     {
+      "id": 2,
       "name": "HQ",
-      "address": "West",
-      "id": 2
+      "address": "West"
+    },
+    {
+      "id": 3,
+      "name": "School",
+      "address": "301"
     }
   ]
 }

@@ -7,6 +7,7 @@ class AnimalDetail extends Component {
     state = {
         name: "",
         breed: "",
+        employeeId: "",
         loadingStatus: true,
     }
     
@@ -25,7 +26,8 @@ class AnimalDetail extends Component {
             this.setState({
                 name: animal.name,
                 breed: animal.breed,
-                loadingStatus: false
+                employeeId: animal.employeeId,
+                loadingStatus: false,
             });
         });
     }

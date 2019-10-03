@@ -20,7 +20,7 @@ class LocationDetail extends Component {
     componentDidMount(){
         console.log("AnimalDetail: ComponentDidMount");
         //get(id) from AnimalManager and hang on to that data; put it into state
-        LocationManager.getAllLocations(this.props.locationId)
+        LocationManager.get(this.props.locationId)
         .then((location) => {
             this.setState({
                 name: location.name,

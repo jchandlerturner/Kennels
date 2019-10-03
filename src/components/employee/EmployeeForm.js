@@ -16,20 +16,20 @@ class EmployeeForm extends Component {
 
     /*  Local method for validation, set loadingStatus, create animal      object, invoke the AnimalManager post method, and redirect to the full animal list
     */
-    constructNewAnimal = evt => {
+    constructNewEmployee = evt => {
         evt.preventDefault();
-        if (this.state.animalName === "" || this.state.breed === "") {
-            window.alert("Please input an animal name and breed");
+        if (this.state.employeeName === "" || this.state.position === "") {
+            window.alert("Please enter employee info");
         } else {
             this.setState({ loadingStatus: true });
-            const animal = {
-                name: this.state.animalName,
-                breed: this.state.breed,
+            const employee = {
+                name: this.state.employeeName,
+                position: this.state.position,
             };
 
             // Create the animal and redirect user to animal list
-            AnimalManager.post(animal)
-            .then(() => this.props.history.push("/animals"));
+            EmployeeManager.post(employee)
+            .then(() => this.props.history.push("/employees"));
         }
     };
 
@@ -44,24 +44,24 @@ class EmployeeForm extends Component {
                         type="text"
                         required
                         onChange={this.handleFieldChange}
-                        id="animalName"
-                        placeholder="Animal name"
+                        id="employeeName"
+                        placeholder="Employee Name"
                         />
-                        <label htmlFor="animalName">Name</label>
+                        <label htmlFor="employeeName">Name</label>
                         <input
                         type="text"
                         required
                         onChange={this.handleFieldChange}
-                        id="breed"
-                        placeholder="Breed"
+                        id="position"
+                        placeholder="Position"
                         />
-                        <label htmlFor="breed">Breed</label>
+                        <label htmlFor="position">Position</label>
                     </div>
                     <div className="alignRight">
                         <button
                         type="button"
                         disabled={this.state.loadingStatus}
-                        onClick={this.constructNewAnimal}
+                        onClick={this.constructNewEmployee}
                         >Submit</button>
                     </div>
                 </fieldset>
@@ -71,4 +71,4 @@ class EmployeeForm extends Component {
     }
 }
 
-export default AnimalForm
+export default EmployeeForm
