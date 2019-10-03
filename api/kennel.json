@@ -1,10 +1,39 @@
 {
-  "animals": [],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Gus",
+      "breed": "Heeler",
+      "employeeId": 3
+    },
+    {
+      "id": 2,
+      "name": "Nellie",
+      "breed": "Doodle",
+      "employeeId": 1
+    },
+    {
+      "id": 3,
+      "name": "Zam",
+      "breed": "Lab",
+      "employeeId": 2
+    }
+  ],
   "employees": [
     {
+      "name": "Gradi",
+      "position": "Pooper Scooper",
+      "id": 1
+    },
+    {
       "name": "Quin",
-      "position": "Quin",
+      "position": "Vet",
       "id": 2
+    },
+    {
+      "name": "Summer",
+      "position": "Receptionist",
+      "id": 3
     }
   ],
   "owners": [

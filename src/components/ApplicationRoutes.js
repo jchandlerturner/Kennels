@@ -24,11 +24,6 @@ import EmployeeWithAnimals from './employee/EmployeesWithAnimals'
 
 class ApplicationViews extends Component {
 
-  // Check if credentials are in local storage
-  //returns true/false
-  isAuthenticated = () => localStorage.getItem("credentials") !== null
-
-
   render() {
     return (
       <React.Fragment>
@@ -37,7 +32,7 @@ class ApplicationViews extends Component {
         }} />
         {/* Make sure you add the `exact` attribute here */}
         <Route exact path="/animals" render={props => {
-          if (this.isAuthenticated()) {
+          if (this.props.user) {
             return <AnimalList {...props} />
           } else {
             return <Redirect to="/login" />
@@ -90,7 +85,9 @@ class ApplicationViews extends Component {
         <Route path="/animals/new" render={(props) => {
           return <AnimalForm {...props} />
         }} />
-        <Route path="/login" component={Login} />
+        <Route path="/login" render={props => {
+          return <Login setUser={this.props.setUser} {...props} />
+        }} />
       </React.Fragment>
     )
   }
