@@ -17,7 +17,10 @@ import Login from './auth/Login'
 import LocationForm from './location/LocationForm'
 import OwnerForm from './owner/OwnerForm'
 import AnimalEditForm from './animal/AnimalEditForm'
-
+import EmployeeForm from './employee/EmployeeForm'
+import EmployeeEditForm from './employee/EmployeeEditForm'
+import LocationEditForm from './location/LocationEditForm'
+import EmployeeWithAnimals from './employee/EmployeesWithAnimals'
 
 class ApplicationViews extends Component {
 
@@ -49,8 +52,19 @@ class ApplicationViews extends Component {
             return <AnimalEditForm {...props} />
           }}
         />
-        <Route path="/employees" render={(props) => {
-          return <EmployeeList />
+        <Route exact path="/employees" render={(props) => {
+          return <EmployeeList {...props} />
+        }} />
+        <Route path="/employees/new" render={(props) => {
+          return <EmployeeForm {...props} />
+        }} />
+        <Route
+          path="/employees/:employeeId(\d+)/edit" render={props => {
+            return <EmployeeEditForm {...props} />
+          }}
+        />
+        <Route path="/employees/:employeeId(\d+)/details" render={(props) => {
+          return <EmployeeWithAnimals {...props} />
         }} />
         <Route exact path="/owners" render={(props) => {
           return <OwnerList {...props} />
@@ -61,13 +75,18 @@ class ApplicationViews extends Component {
         <Route exact path="/locations" render={(props) => {
           return <LocationList {...props} />
         }} />
-        <Route path="/locations/:locationId(\d+)" render={(props) => {
+        <Route exact path="/locations/:locationId(\d+)" render={(props) => {
           // Pass the animalId to the AnimalDetailComponent
           return <LocationDetail locationId={parseInt(props.match.params.locationId)} {...props} />
         }} />
         <Route path="/locations/new" render={(props) => {
           return <LocationForm {...props} />
         }} />
+        <Route exact
+          path="/locations/:locationId(\d+)/edit" render={props => {
+            return <LocationEditForm {...props} />
+          }}
+        />
         <Route path="/animals/new" render={(props) => {
           return <AnimalForm {...props} />
         }} />
