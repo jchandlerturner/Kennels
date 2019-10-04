@@ -1,0 +1,29 @@
+fieldset {
+    background-color: #e9f3f7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.submit {
+    background-color: #599B78;
+    border: none;
+    color: cornsilk;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: .5em;
+    border-radius: 2px;
+    margin: .1em;
+}
+
+.submit:hover {
+    background-color: rgb(50, 88, 68);
+  }
+fieldset h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import './Login.css'
 
 class Login extends Component {
 
@@ -46,7 +47,7 @@ class Login extends Component {
                     required="" />
                 <label htmlFor="inputPassword">Password</label>
             </div>
-            <button type="submit">
+            <button type="submit" className="submit">
                 Log in
             </button>
         </fieldset>

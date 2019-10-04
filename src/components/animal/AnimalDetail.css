@@ -1,3 +1,18 @@
 button {
-   cursor: pointer; 
+   cursor: pointer;
+   background-color: #599B78;
+   border: none;
+   color: cornsilk;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   padding: .5em;
+   border-radius: 2px;
+   margin: .1em;
+}
+
+img {
+   height: 153.59px;
+   width: 153.59px;
 }

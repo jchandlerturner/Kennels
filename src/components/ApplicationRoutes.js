@@ -68,7 +68,7 @@ class ApplicationViews extends Component {
           return <OwnerForm {...props} />
         }} />
         <Route exact path="/locations" render={(props) => {
-          return <LocationList {...props} />
+          return <LocationList {...props} user={this.props.user} />
         }} />
         <Route exact path="/locations/:locationId(\d+)" render={(props) => {
           // Pass the animalId to the AnimalDetailComponent

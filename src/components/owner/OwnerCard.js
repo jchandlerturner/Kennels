@@ -10,7 +10,7 @@ class OwnerCard extends Component {
           </picture>
           <h3><span className="card-petname">{this.props.owner.name}</span></h3>
           <p>{this.props.owner.owns}</p>
-          <button type="button" onClick={() => this.props.deleteOwner(this.props.owner.id)}>Discharge 👋</button>
+          <button type="button" className= "hvr-float" onClick={() => this.props.deleteOwner(this.props.owner.id)}>Discharge 👋</button>
         </div>
       </div>
     );

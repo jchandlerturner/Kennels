@@ -3,12 +3,12 @@ fieldset {
     padding: 4px;
     margin: 2em auto;
     border: 0 none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background: aliceblue;
 }
 
-fieldset input, fieldset button{
+fieldset input, fieldset button {
     box-sizing: border-box;
     padding: .2em .4em;
     margin: .2em 0;
@@ -20,7 +20,7 @@ fieldset button {
     max-width: 9em;
     padding: .5em;
     margin: .3em auto;
-    background-color: cornflowerblue;
+    background-color: #599B78;
     border: none;
     color: cornsilk;
     text-align: center;
@@ -30,6 +30,11 @@ fieldset button {
     border-radius: 2px;
     width: 100%;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset button:hover {
+    background-color: rgb(50, 88, 68);
 }
 
 fieldset label {
@@ -37,7 +42,8 @@ fieldset label {
     user-select: none;
     cursor: pointer;
 }
-fieldset input:focus + label {
+
+fieldset input:focus+label {
     color: #933;
 }
 

@@ -10,10 +10,10 @@ class EmployeeCard extends Component {
           </picture>
           <h3><span className="card-petname">{this.props.employee.name}</span></h3>
           <p>{this.props.employee.position}</p>
-          <button type="button"
+          <button type="button" className= "hvr-float"
             onClick={() => { this.props.history.push(`/employees/${this.props.employee.id}/details`) }}>Details</button>
-          <button type="button" onClick={() => this.props.fireEmployee(this.props.employee.id)}>Fire 🔥</button>
-          <button type="button"
+          <button type="button" className= "hvr-float" onClick={() => this.props.fireEmployee(this.props.employee.id)}>Fire 🔥</button>
+          <button type="button" className= "hvr-float"
             onClick={() => { this.props.history.push(`/employees/${this.props.employee.id}/edit`) }}>Edit</button>
         </div>
       </div>
